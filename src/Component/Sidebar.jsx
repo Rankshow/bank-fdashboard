@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "./image/first-bank-logo.jpg";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons'; 
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
@@ -9,7 +10,6 @@ import { QuestionCircleOutlined } from '@ant-design/icons/lib/icons';
 import { StockOutlined } from '@ant-design/icons/lib/icons';
 import { LogoutOutlined } from '@ant-design/icons/lib/icons';
 import { BankOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
 
 // ==========sidebar layout==================
 const Sidebar = () => {
@@ -42,8 +42,8 @@ const Sidebar = () => {
           </div>
           {/* =================New User============================= */}
           <div className='flex px-1 py-3'> 
-            <Link to="/contact" className='flex items-center'>
-            <FontAwesomeIcon className='text-2xl' icon={faUser} style={{color: "#ae1504",}} />
+            <Link to="/NewUser" className='flex items-center'>
+            <FontAwesomeIcon className='text-2xl' icon={faUser} style={{color: "#ae1504"}} />
              <span className='ml-3 hover:text-neutral-300 hover:underline'>New User</span>
               </Link>
           </div>

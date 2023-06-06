@@ -1,6 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Component/About";
+import NewUser from "./Component/NewUser";
 import Contact from "./Component/Contact";
 import Logout from "./Component/logout";
 import Layout from "./Component/SharedLayout";
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Layout />} >
           <Route index element={<Dashboard />} />
           <Route path="about" element={<About />} />
+          <Route path="newUser" element={<NewUser />} />
           <Route path="contact" element={<Contact />} />
           <Route path="logout" element={<Logout />} />
         </Route>

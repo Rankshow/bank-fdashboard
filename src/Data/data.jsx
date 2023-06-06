@@ -2,9 +2,9 @@ export const data = [
   {
   id: 1,
   firstName: 'John',
-  LastName: 'Doe',
+  LastName: 'Osimenh',
   Email: 'johnDo@gmail.com',
-  PhoneNumber: 09023458392,
+  PhoneNumber: 902345392,
   UserName: 'Rusaua20',
   NumberOfAccount: 3,
   Action: 'Normal case'
@@ -12,9 +12,9 @@ export const data = [
   {
   id:2,
   firstName: 'Mark',
-  LastName: 'Uwa',
+  LastName: 'Gabriela',
   Email: 'markuwa@gmail.com',
-  PhoneNumber: 081233458392,
+  PhoneNumber: 81233458392,
   UserName: 'MarkU3',
   NumberOfAccount: 1,
   Action: 'Atm issues'
@@ -24,17 +24,17 @@ export const data = [
   firstName: 'Veronica',
   LastName: 'Austine',
   Email: 'johnDo@gmail.com',
-  PhoneNumber: 09023458392,
-  UserName: 'Rusaua20',
+  PhoneNumber: 9023458392,
+  UserName: 'Pyhtoli2',
   NumberOfAccount: 3,
   Action: 'Normal case'
 },
   {
   id: 4,
   firstName: 'Mathew',
-  LastName: 'Jude',
+  LastName: 'Syvestre',
   Email: 'mathewJu@gmail.com',
-  PhoneNumber:  09023458392,
+  PhoneNumber:  9023458392,
   UserName: 'Rusaua20',
   NumberOfAccount: 3,
   Action: 'Normal case'
@@ -42,9 +42,9 @@ export const data = [
   {
   id: 5,
   firstName: 'Chioma',
-  LastName: 'Ndika',
+  LastName: 'Berchman',
   Email: 'johnDo@gmail.com',
-  PhoneNumber: 08023458392,
+  PhoneNumber: 8023458392,
   UserName: 'Chioma45',
   NumberOfAccount: 6,
   Action: 'Vat issue'
@@ -52,9 +52,9 @@ export const data = [
   {
   id: 6,  
   firstName: 'Philip',
-  LastName: 'Range',
+  LastName: 'Emannuella',
   Email: 'johnDo@gmail.com',
-  PhoneNumber: 09023458392,
+  PhoneNumber: 9023458392,
   UserName: 'Philip20',
   NumberOfAccount: 8,
   Action: 'Tax case'
@@ -62,9 +62,9 @@ export const data = [
   {
   id: 7,
   firstName: 'Chima',
-  LastName: 'Jeff',
+  LastName: 'Jeremiah',
   Email: 'chimajeff@gmail.com',
-  PhoneNumber: 09023458392,
+  PhoneNumber: 9023458392,
   UserName: 'chimajef21',
   NumberOfAccount: 3,
   Action: 'picking case'
@@ -72,9 +72,9 @@ export const data = [
   {
   id: 7,
   firstName: 'Ifeanyi',
-  LastName: 'Onye',
+  LastName: 'Onyeyinchi',
   Email: 'Ifeayi@gmail.com',
-  PhoneNumber: 09023458392,
+  PhoneNumber: 9023458392,
   UserName: 'Rusaua20',
   NumberOfAccount: 3,
   Action: 'Normal case'
@@ -84,9 +84,9 @@ export const data = [
   firstName: 'Onyechi',
   LastName: 'Chizoba',
   Email: 'oyechi@gmail.com',
-  PhoneNumber: 09123458392,
+  PhoneNumber: 9123458392,
   UserName: 'Oyech3',
-  NumberOfAccount: null,
+  NumberOfAccount: 4,
   Action: 'Domant case'
 },
   {
@@ -94,7 +94,7 @@ export const data = [
   firstName: 'Mohammed',
   LastName: 'Abudeen',
   Email: 'mohamd@gmail.com',
-  PhoneNumber: 08123458392,
+  PhoneNumber: 8123458392,
   UserName: 'Mohameed0',
   NumberOfAccount: 9,
   Action: 'Transaction case'
@@ -104,7 +104,7 @@ export const data = [
   firstName: 'Toyosi',
   LastName: 'philimone',
   Email: 'toyosi@gmail.com',
-  PhoneNumber: 09023458392,
+  PhoneNumber: 9023458392,
   UserName: 'Oyosisi20',
   NumberOfAccount: 3,
   Action: 'Normal case'
