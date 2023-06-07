@@ -18,7 +18,7 @@ const About = () => {
             {/* =========------+++++ Add New Users =+++++++++====== */}
            <div className='relative'>
            <PlusCircleOutlined className='text-[20px] text-gray-400 absolute top-1/2 -translate-y-1/2 left-3'/>
-            <input type="text"  placeholder='Add New user' className='focus:outline-none active:outline-none border border-grey-300 rounded-lg h-12 pl-11 pr-6'/></div>
+            <input type="text"  placeholder='Add New user' className='focus:outline-none active:outline-none border border-gray-300 rounded-lg h-12 pl-11 pr-6'/></div>
             {/* =========+++++++++ Action ====+++++++++++++++ */}
         <input type="text"  placeholder='Action' className='focus:outline-none active:outline-none border border-grey-300 rounded-lg h-12 pl-11 pr-6'/>
         <UnorderedListOutlined className='text-[2.8rem] text-gray-500'/>
@@ -56,29 +56,6 @@ const About = () => {
                 }
         </table>     
     </div>
-      {/* {data.map((list) => {
-        return(
-          <>
-           <div>
-             < className='table-auto'>
-                <thead>
-                  <tr>
-                    <th>Firstname</th>
-                    <th>Lastame</th>
-                    <th>Email</th>
-                    <th>Phone No</th>
-                    <th>Username</th>
-                    <th>No of Account</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                {/* <tbody key={list.id}>
-                  <tr>
-                    
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody> */}
     </div>
     </>
   )

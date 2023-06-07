@@ -1,8 +1,8 @@
 export const data = [
   {
   id: 1,
-  firstName: 'John',
-  LastName: 'Osimenh',
+  firstName: 'Micheal',
+  LastName: 'Victor',
   Email: 'johnDo@gmail.com',
   PhoneNumber: 902345392,
   UserName: 'Rusaua20',

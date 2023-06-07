@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Component/About";
 import NewUser from "./Component/NewUser";
-import Contact from "./Component/Contact";
+import CreateUser from "./Component/CreateUser";
 import Logout from "./Component/logout";
 import Layout from "./Component/SharedLayout";
 import Dashboard from "./Component/Dashboard";
@@ -17,7 +17,7 @@ const App = () => {
           <Route index element={<Dashboard />} />
           <Route path="about" element={<About />} />
           <Route path="newUser" element={<NewUser />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="CreateUser" element={<CreateUser />} />
           <Route path="logout" element={<Logout />} />
         </Route>
       </Routes>

@@ -35,9 +35,9 @@ const Sidebar = () => {
           </div>
           {/* ============ Existing User===================== */}
           <div className='flex px-1 py-3'> 
-            <Link to="/contact" className='flex items-center'>
+            <Link to="/createUser" className='flex items-center'>
             <FontAwesomeIcon className='text-2xl' icon={faUserGroup} />
-             <span className='ml-3 hover:text-neutral-300  hover:underline'>Existing User</span>
+             <span className='ml-3 hover:text-neutral-300  hover:underline'>Create User</span>
               </Link>
           </div>
           {/* =================New User============================= */}
