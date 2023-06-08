@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Component/About";
-import NewUser from "./Component/NewUser";
+import CustomerID from "./Component/CustomerID";
 import CreateUser from "./Component/CreateUser";
 import Logout from "./Component/logout";
 import Layout from "./Component/SharedLayout";
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/" element={<Layout />} >
           <Route index element={<Dashboard />} />
           <Route path="about" element={<About />} />
-          <Route path="newUser" element={<NewUser />} />
+          <Route path="CustomerID" element={<CustomerID />} />
           <Route path="CreateUser" element={<CreateUser />} />
           <Route path="logout" element={<Logout />} />
         </Route>

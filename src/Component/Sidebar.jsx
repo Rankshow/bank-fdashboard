@@ -30,7 +30,7 @@ const Sidebar = () => {
           <div className='flex px-1 py-3'> 
             <Link to="/about" className='flex items-center'>
               <BankOutlined className='text-2xl' />
-             <span className='ml-3 hover:text-neutral-300 hover:underline'>Retail</span>
+             <span className='ml-3 hover:text-neutral-300 hover:underline'>Existing Users</span>
               </Link>
           </div>
           {/* ============ Existing User===================== */}
@@ -42,12 +42,12 @@ const Sidebar = () => {
           </div>
           {/* =================New User============================= */}
           <div className='flex px-1 py-3'> 
-            <Link to="/NewUser" className='flex items-center'>
+            <Link to="/CustomerID" className='flex items-center'>
             <FontAwesomeIcon className='text-2xl' icon={faUser} style={{color: "#ae1504"}} />
-             <span className='ml-3 hover:text-neutral-300 hover:underline'>New User</span>
+             <span className='ml-3 hover:text-neutral-300 hover:underline'>Add Customer ID & Accounts</span>
               </Link>
           </div>
-          {/* =============== Corporate================================= */}
+          {/* ===============++++++++++++++ Corporate ================================= */}
           <div className='flex px-1 py-3'> 
             <Link to="/contact" className='flex items-center'>
             <StockOutlined className='text-2xl'/>
@@ -83,4 +83,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Sidebar;
