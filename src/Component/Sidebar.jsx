@@ -49,9 +49,9 @@ const Sidebar = () => {
           </div>
           {/* ===============++++++++++++++ Corporate ================================= */}
           <div className='flex px-1 py-3'> 
-            <Link to="/contact" className='flex items-center'>
+            <Link to="/confirmation" className='flex items-center'>
             <StockOutlined className='text-2xl'/>
-             <span className='ml-3 hover:text-neutral-300 hover:underline'>Corporate</span>
+             <span className='ml-3 hover:text-neutral-300 hover:underline'>Confirmation Review</span>
               </Link>
           </div>
           {/* ====================+Settings ++++===================== */}
