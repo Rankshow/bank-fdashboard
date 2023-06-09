@@ -6,19 +6,19 @@ const EmpCreate = () => {
     // initailizing all states
     const [id, setId] = useState("");
     const [accountName, setAccountName] = useState("");
-    const [accountNumber, setAccountNumber] = useState("");
+    const [accountNo, setAccountNo] = useState("");
     const [currency, setCurrency] = useState("");
     const navigate = useNavigate();
 
     // handlesubmit event
     const handlesubmit = (e) => {
         e.preventDefault();
-        const data = {id,accountName,accountNumber,currency};
+        const data = {accountName,accountNo,currency};
 
         // Post request
         fetch("http://localhost:5175/customers",{
            method:"POST",
-           headers:{"contnt-type":"application/json"},
+           headers:{"content-type":"application/json"},
            body: JSON.stringify(data) 
         }).then((res) => {
             alert("Save successfully!");
@@ -47,7 +47,7 @@ const EmpCreate = () => {
               {/* ================= Account Number =================== */}
               <div className='pt-5 mt-1.3 ml-1'>
                 <label htmlFor="Account Number" className='text-gray-500 font-bold text-[20px] tracking-wider'>Account Number</label></div>
-              <div><input value={accountNumber} onChange={(e) => setAccountNumber(e.target.value)} type="number" placeholder='Account Number' className='focus:outline-none active:outline-none border border-gray-400 rounded-lg pl-6 h-12 w-[30rem] text-[22px]'/>
+              <div><input value={accountNo} onChange={(e) => setAccountNo(e.target.value)} type="number" placeholder='Account Number' className='focus:outline-none active:outline-none border border-gray-400 rounded-lg pl-6 h-12 w-[30rem] text-[22px]'/>
               </div>
 
               {/* ================= currency =================== */}
