@@ -47,6 +47,12 @@
       "accountNo": "50234843738",
       "currency": "Naira",
       "id": 8
+    },
+    {
+      "accountName": "Philip Balogun",
+      "accountNo": "3062347485",
+      "currency": "cedes",
+      "id": 9
     }
   ]
 }

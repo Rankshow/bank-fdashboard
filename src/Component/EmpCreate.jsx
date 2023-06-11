@@ -35,8 +35,8 @@ const EmpCreate = () => {
          <form onSubmit={handlesubmit}>
          <div className='pt-4 ml-1'>
                 <label htmlFor="firstName" className='text-gray-500 font-bold text-[20px] tracking-wider'>Id</label></div>
-              <div><input value={id} disabled="disabled" type="number" placeholder='Id number' className='focus:outline-none active:outline-none border border-gray-400 rounded-lg pl-6 h-12 w-[30rem] text-[22px]'/>
-              </div>
+              <div><input value={id} disabled="disabled" onChange={(e) => setId(e.target.value)} type="number" placeholder='Id number' className='focus:outline-none active:outline-none border border-gray-400 rounded-lg pl-6 h-12 w-[30rem] text-[22px]'/>
+              </div> 
 
               {/* ================= Account Name =================== */}
               <div className='pt-5 mt-1.3 ml-1'>
@@ -64,4 +64,4 @@ const EmpCreate = () => {
   )
 }
 
-export default EmpCreate
+export default EmpCreate;
