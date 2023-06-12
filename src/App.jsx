@@ -23,9 +23,8 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="CustomerID" element={<CustomerID />}></Route>
           <Route path="/customers/create" element={<EmpCreate />}></Route>
-          <Route path="/customers/edit:empid" element={<EmpEdit />}></Route>
-          <Route path="/customers/detail:empid" element={<EmpDetail />}></Route>
-          <Route path="/customers/remove:empid" element={<EmpRemove />}></Route>
+          <Route path="/customers/edit/:empid" element={<EmpEdit />}></Route>
+          <Route path="/customers/detail/:empid" element={<EmpDetail />}></Route>
           <Route path="CreateUser" element={<CreateUser />}></Route>
           <Route path="confirmation" element={<Confirmation />}></Route>
           <Route path="logout" element={<Logout />}></Route>

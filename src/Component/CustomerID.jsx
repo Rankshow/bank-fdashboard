@@ -19,9 +19,8 @@ const CustomerID = () => {
   }, []);
 
   // handleDetails
-  const handleDetails = (id) => {
-    navigate("/customers/detail/"+id)
-
+  const handleDetail = (id) => {
+    navigate("/customers/detail/"+id);
   };
   // handleRemove
   const handleRemove = (id) => {
@@ -57,14 +56,14 @@ const CustomerID = () => {
             { data &&
               data.map(items => (       
                 <tr key={items.id} className='text-center'>
-                     <td><input type='checkbox'></input></td>
+                     <td>{items.id}</td>
                     <td>{items.accountName}</td>
                     <td>{items.accountNo}</td>
                     <td>{items.currency}</td>
                     <td>
                       <button onClick={() =>handleEdit(items.id)} className='bg-green-800 py-2 m-2 p-2 rounded-md hover:opacity-90 text-white font-medium'>Edit</button>
                       <button onClick={() =>handleRemove(items.id)} className='bg-red-800 py-2 m-3 p-2 rounded-md hover:opacity-90 text-white font-medium'>Remove</button>
-                      <button onClick={() =>handleDetails(items.id)} className='bg-blue-800 py-2 m-3 p-2 rounded-md hover:opacity-90 text-white font-medium'>Details</button>
+                     <button onClick={() =>handleDetail(items.id)} className='bg-blue-800 py-2 m-3 p-2 rounded-md hover:opacity-90 text-white font-medium'>Details</button>
                     </td>
                  </tr>
               ))
