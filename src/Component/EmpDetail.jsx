@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const EmpDetail = () => {
+  
   // state of the Id and List...
   const {empid} = useParams();
   const [list, setList] = useState([]); 

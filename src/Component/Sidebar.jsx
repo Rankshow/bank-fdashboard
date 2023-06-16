@@ -7,7 +7,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { AppstoreOutlined } from '@ant-design/icons';
 import { SettingOutlined } from '@ant-design/icons/lib/icons';
 import { QuestionCircleOutlined } from '@ant-design/icons/lib/icons';
-import { StockOutlined } from '@ant-design/icons/lib/icons';
+// import { StockOutlined } from '@ant-design/icons/lib/icons';
 import { LogoutOutlined } from '@ant-design/icons/lib/icons';
 import { BankOutlined } from '@ant-design/icons';
 
@@ -47,16 +47,16 @@ const Sidebar = () => {
              <span className='ml-3 hover:text-neutral-300 hover:underline'>Add Customer ID & Accounts</span>
               </Link>
           </div>
-          {/* ===============++++++++++++++ Corporate ================================= */}
-          <div className='flex px-1 py-3'> 
+          {/* ===============++++++++++++++ confirmation Review ================================= */}
+          {/* <div className='flex px-1 py-3'> 
             <Link to="/confirmation" className='flex items-center'>
             <StockOutlined className='text-2xl'/>
              <span className='ml-3 hover:text-neutral-300 hover:underline'>Confirmation Review</span>
               </Link>
-          </div>
+          </div> */}
           {/* ====================+Settings ++++===================== */}
           <div className='flex px-1 py-3'> 
-            <Link to="/contact" className='flex items-center'>
+            <Link to="/settings" className='flex items-center'>
             <SettingOutlined className='text-2xl' />
              <span className='ml-3 hover:text-neutral-300 hover:underline'>Settings</span>
               </Link>
@@ -66,14 +66,14 @@ const Sidebar = () => {
           <hr className='py-2 w-5/6'/>
           {/* ================== help================== */}
           <div className='flex px-1 py-3'> 
-            <Link to="/contact" className='flex items-center'>
+            <Link to="/help" className='flex items-center'>
             <QuestionCircleOutlined className='text-2xl' />
              <span className='ml-3 hover:text-neutral-300 hover:underline'>Help & Getting Started</span>
               </Link>
           </div>
           {/* ================== Logout ==================== */}
           <div className='flex px-1 py-3'> 
-            <Link to="/contact" className='flex items-center'>
+            <Link to="/Logout" className='flex items-center'>
             <LogoutOutlined className='text-2xl' />
              <span className='ml-3 hover:text-neutral-300 hover:underline'>Logout</span>
               </Link>

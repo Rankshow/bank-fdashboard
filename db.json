@@ -1,58 +1,16 @@
 {
   "customers": [
     {
-      "accountName": "Taiwo Obiakwo",
-      "accountNo": "3021342310",
-      "currency": "Eur",
-      "id": 1
-    },
-    {
-      "accountName": "Josua Philimon",
-      "accountNo": "4021342310",
-      "currency": "Naira",
-      "id": 2
-    },
-    {
-      "accountName": "Abigail Marphi",
-      "accountNo": "3021342310",
-      "currency": "Dollar",
-      "id": 3
-    },
-    {
-      "accountName": "George Declan",
-      "accountNo": "3021342310",
-      "currency": "Cedes",
-      "id": 4
-    },
-    {
-      "accountName": "Peter Parker",
-      "accountNo": "3021342310",
+      "accountName": "Uwaoma Obinna ",
+      "accountNo": "070172849995",
       "currency": "Pounds",
-      "id": 5
-    },
-    {
-      "accountName": "Ohimo jusio",
-      "accountNo": "3021342310",
-      "currency": "¥ui",
-      "id": 6
-    },
-    {
-      "accountName": "Uwaom Obinna",
-      "accountNo": "2230964749",
-      "currency": "euro",
-      "id": 7
-    },
-    {
-      "accountName": "Edmund Osuji",
-      "accountNo": "50234843738",
-      "currency": "Naira",
-      "id": 8
-    },
-    {
-      "accountName": "Philip Balogun",
-      "accountNo": "3062347485",
-      "currency": "cedes",
       "id": 9
+    },
+    {
+      "accountName": "Micheal Matthew",
+      "accountNo": "30127585996",
+      "currency": "dollars",
+      "id": 10
     }
   ]
 }

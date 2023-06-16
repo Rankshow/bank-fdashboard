@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {SearchOutlined} from '@ant-design/icons';
 import {PlusCircleOutlined} from '@ant-design/icons';
 import { UnorderedListOutlined } from '@ant-design/icons';
@@ -6,6 +6,9 @@ import { data } from '../Data/data';
 
 
 const About = () => {
+  // initializing search state
+   const [existUser, setExistUser] = useState("");
+
   return (
     <>
     <div className='mx-8'>
@@ -14,7 +17,7 @@ const About = () => {
           {/* ====+++++++++++++=== Search input===++++++++++++++++ */}
            <div className='relative'>
            <SearchOutlined className='text-[20px] text-gray-400 absolute top-1/2 -translate-y-1/2 left-3'/>
-            <input type="text" placeholder='Search all data' className='focus:outline-none active:outline-none h-12 w-[50rem] border border-grey-300 rounded-lg pl-11 pr-4' /></div>
+            <input type="text" onChange={(e) => setExistUser(e.target.value)} placeholder='Search all data' className='focus:outline-none active:outline-none h-12 w-[50rem] border border-grey-300 rounded-lg pl-11 pr-4' /></div>
             {/* =========------+++++ Add New Users =+++++++++====== */}
            <div className='relative'>
            <PlusCircleOutlined className='text-[20px] text-gray-400 absolute top-1/2 -translate-y-1/2 left-3'/>
@@ -38,8 +41,11 @@ const About = () => {
                     <th className='px-9 py-2'>Action</th>
                   </tr>
                 </thead>
-                { data.map((list) =>{
-                  return(
+                {/* Search functionality */}
+                { data.filter((list) =>{
+                  return existUser.toLowerCase() === "" ? list : list.firstName.toLowerCase().includes(existUser)
+                }).map((list) =>
+                  (
                   <tbody className='text-xl text-center border-separate border-spacing-2 snap-y'>
                     <tr key={list.id} className='hover:bg-gray-300'>
                     <td className='py-2'>{list.LastName}</td>
@@ -52,7 +58,7 @@ const About = () => {
                     </tr>
                   </tbody>
                   )
-                  })
+                  )
                 }
         </table>     
     </div>
@@ -61,4 +67,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

@@ -8,7 +8,7 @@ const CustomerID = () => {
   const [data, setData] = useState(null);
   const navigate = useNavigate();
   
-  useState(() => {
+  useEffect(() => {
     fetch("http://localhost:5175/customers").then((res) => {
       return res.json();
     }).then((resp) =>{
@@ -22,13 +22,25 @@ const CustomerID = () => {
   const handleDetail = (id) => {
     navigate("/customers/detail/"+id);
   };
-  // handleRemove
-  const handleRemove = (id) => {
 
-  };
   // handleEdit
   const handleEdit = (id) => {
-
+    navigate("/customers/edit/"+id);
+  };
+  
+  // handleRemove
+  const handleRemove = (id) => {
+     // Delete request
+     if(window.confirm("Do you want to remove?")){
+     fetch("http://localhost:5175/customers/" + id,{
+      method:"DELETE"
+   }).then((res) => {
+       alert("Removed successfully");
+       window.location.reload()
+   }).catch((err) => {
+       console.log(err.message)
+   })
+  }
   };
 
   return (

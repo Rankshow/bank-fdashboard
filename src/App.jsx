@@ -10,7 +10,7 @@ import Dashboard from "./Component/Dashboard";
 import EmpCreate from "./Component/EmpCreate";
 import EmpEdit from "./Component/EmpEdit";
 import EmpDetail from "./Component/EmpDetail";
-import EmpRemove from "./Component/EmpRemove";
+
 
 const App = () => {
 

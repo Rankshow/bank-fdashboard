@@ -1,9 +1,11 @@
 import React from 'react';
 import { schemaIndex } from "../SchemaContainer/SchemaIndex";
 import { Formik, Form } from 'formik';
+import { Link } from 'react-router-dom';
 
 
 const CreateUser = () => {
+  
 
   // Initial valiues of the form
  const initialValues= {
@@ -17,8 +19,8 @@ const CreateUser = () => {
  }
  
 //  handlesubmit
- const handleSubmit = (values, helpers) => {
-  console.log("submitte")
+ const handleSubmit = (value,helpers) => {
+  console.log("submitted")
  } 
 
 //  =+++++++++++++++++++============================== Rendering to the Dom =+=============================================
@@ -31,7 +33,7 @@ const CreateUser = () => {
         {props => {
           console.log(props)
           return (
-          <Form >
+          <Form onSubmit={handleSubmit}>
             <div className='flex justify-evenly'>
               <div>
                 <div>
@@ -96,9 +98,8 @@ const CreateUser = () => {
               </div>
 
 
-              <button className='bg-slate-900 hover:opacity-90 rounded-md mt-3 w-[20rem] py-3 tracking-wider px-2 text-white'  type='submit'>Submit</button>
+            <Link to="/confirmation"><button className='bg-slate-900 hover:opacity-90 rounded-md mt-3 w-[20rem] py-3 tracking-wider px-2 text-white'  type='submit'>Submit</button></Link>
               </div>
-               <div className='mt-7'>Confirmation detailas</div>
             </div>
           </Form>
           )
